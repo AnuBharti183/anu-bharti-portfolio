@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anu Bharti | Data Analyst Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Anu Bharti | Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -204,6 +205,14 @@
         }
 
         .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
             cursor: pointer;
             transition: all 0.3s ease;
             position: relative;
@@ -531,255 +540,214 @@
     </style>
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div id="progressBar"></div>
-
-    <!-- Animated background -->
-    <div class="bg-animation">
-        <div class="floating-shape shape1"></div>
-        <div class="floating-shape shape2"></div>
-        <div class="floating-shape shape3"></div> <!-- Cadetblue shape -->
-        <div class="floating-shape shape4"></div> <!-- Steelblue shape -->
-    </div>
-
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <h1 class="main-title">Anu Bharti</h1>
-            <p class="subtitle">Aspiring Data Analyst</p>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Welcome Section -->
-    <section id="home">
-        <div class="container">
-            <div class="glass-card">
-                <h2 class="section-title">Welcome to My Data Journey</h2>
-                <p class="welcome-text">
+<!-- Scroll Progress Bar -->
+<div id="progressBar"></div>
+<!-- Animated background -->
+<div class="bg-animation">
+<div class="floating-shape shape1"></div>
+<div class="floating-shape shape2"></div>
+<div class="floating-shape shape3"></div> <!-- Cadetblue shape -->
+<div class="floating-shape shape4"></div> <!-- Steelblue shape -->
+</div>
+<!-- Header -->
+<header>
+<div class="header-content">
+<h1 class="main-title">Anu Bharti</h1>
+<p class="subtitle">Aspiring Data Analyst</p>
+<nav>
+<a href="#home">Home</a>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<!-- Welcome Section -->
+<section id="home">
+<div class="container">
+<div class="glass-card">
+<h2 class="section-title">Welcome to My Data Journey</h2>
+<p class="welcome-text">
                     Hi! I'm Anu, an aspiring Data Analyst from Lucknow, Uttar Pradesh. After a journey through tutoring and
                     banking, I found my passion in data and tech. Now I'm upskilling in Python, SQL, Excel, and Power BI
                     while building real-world projects that solve business problems and drive insights. Explore my work below!
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="glass-card project-card" onclick="openModal('modal1')">
-                    <img src="accident-resized.jpg" alt="Project 1 Image" style="width:100%; border-radius:15px; margin-bottom:0.8rem;">
-<h3 class="project-title">Road accident analysis using Python</h3>
-                                        
-                    <button class="view-btn">View Details →</button>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="glass-card project-card" onclick="openModal('modal2')">
-                    <img src="file_merge-resized.jpg" alt="Project 2 Image" style="width:100%; border-radius:15px; margin-bottom:0.8rem;">
-<h3 class="project-title">Data Cleaning & Merging for Analysis using Python</h3>
-                                        
-                    <button class="view-btn">View Details →</button>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="glass-card project-card" onclick="openModal('modal3')">
-                    <img src="JB-resized.jpg" alt="Project 3 Image" style="width:100%; border-radius:15px; margin-bottom:0.8rem;">
-<h3 class="project-title">Job Market Analysis using SQL and Power Bi</h3>
-                                        
-                    <button class="view-btn">View Details →</button>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="glass-card project-card" onclick="openModal('modal4')">
-                    <img src="Sales-resized.jpg" alt="Project 4 Image" style="width:100%; border-radius:15px; margin-bottom:0.8rem;">
-<h3 class="project-title">Sales Analysis using SQl and Power Bi</h3>
-                                        
-                    <button class="view-btn">View Details →</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="glass-card">
-                <h2 class="section-title">About Me</h2>
-                <p id="aboutMeText" class="welcome-text" style="max-height: 4.5em; overflow: hidden; transition: max-height 0.5s ease;">
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Featured Projects</h2>
+<div class="projects-grid">
+<!-- Project 1 -->
+<div class="glass-card project-card" onclick="openModal('modal1')">
+<img alt="Project 1 Image" src="accident-resized.jpg" style="width:100%; border-radius:15px; margin-bottom:0.8rem;"/>
+<div style="flex-grow: 1;"><div class="project-card-content" style="flex-grow: 1;"><h3 class="project-title">Road accident analysis using Python</h3></div>
+</div><div><button class="view-btn">View Details →</button></div>
+</div>
+<!-- Project 2 -->
+<div class="glass-card project-card" onclick="openModal('modal2')">
+<img alt="Project 2 Image" src="file_merge-resized.jpg" style="width:100%; border-radius:15px; margin-bottom:0.8rem;"/>
+<div style="flex-grow: 1;"><div class="project-card-content" style="flex-grow: 1;"><h3 class="project-title">Data Cleaning &amp; Merging for Analysis using Python</h3></div>
+</div><div><button class="view-btn">View Details →</button></div>
+</div>
+<!-- Project 3 -->
+<div class="glass-card project-card" onclick="openModal('modal3')">
+<img alt="Project 3 Image" src="job_market_resized.jpg" style="width:100%; border-radius:15px; margin-bottom:0.8rem;"/>
+<div style="flex-grow: 1;"><div class="project-card-content" style="flex-grow: 1;"><h3 class="project-title">Job Market Analysis using SQL and Power Bi</h3></div>
+</div><div><button class="view-btn">View Details →</button></div>
+</div>
+<!-- Project 4 -->
+<div class="glass-card project-card" onclick="openModal('modal4')">
+<img alt="Project 4 Image" src="sales_resized.jpg" style="width:100%; border-radius:15px; margin-bottom:0.8rem;"/>
+<div style="flex-grow: 1;"><div class="project-card-content" style="flex-grow: 1;"><h3 class="project-title">Sales Analysis using SQl and Power Bi</h3></div>
+</div><div><button class="view-btn">View Details →</button></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about">
+<div class="container">
+<div class="glass-card">
+<h2 class="section-title">About Me</h2>
+<p class="welcome-text" id="aboutMeText" style="max-height: 4.5em; overflow: hidden; transition: max-height 0.5s ease;">
                  I graduated back in 2015, and like many others, I thought of trying for government exams. To support myself during the prep, I started tutoring and to my surprise, it picked up really really well. I genuinely enjoyed teaching, and since it was financially rewarding too, I continued it until 2021. But then because of the pandemic, many of my students dropped off, and that’s when I decided to shift gears and go for a more stable option. I prepared for banking services and eventually cracked the SBI Junior Associate exam. I got posted in Pratapgarh in 2023. However, after spending about 9–10 months there, I realized two things: first, the work felt quite mundane, and second, I was actually doing better financially as a tutor since I didn't have to pay bills like rent and stuff at home. So, I made the choice to return to tutoring. And this is where it gets interesting. After I left SBI, I found myself in that classic ‘what's next?’ phase and much after constantly going back and forth, trying to figure out what truly interests me. Funny thing is, I had always believed that anything technical or coding-related just wasn’t my thing. But then, purely by chance, I stumbled upon a free Python course on YouTube. It jumped straight into the coding screen with some simple explanations, and I thought why not give it a shot? Next thing I know, three hours had flown by and I was completely hooked. It just clicked with me in a way I never expected. That moment kind of changed everything, I knew I wanted to dive deeper. So since then, I’ve been preparing seriously, upskilling myself… and here I am now, applying for data roles, excited for what’s ahead!
                 </p>
-    <button onclick="toggleAboutMe()" style="background:none;border:none;color:#5F9EA0;font-weight:bold;cursor:pointer;margin-top:10px;">Read More</button>
+<button onclick="toggleAboutMe()" style="background:none;border:none;color:#5F9EA0;font-weight:bold;cursor:pointer;margin-top:10px;">Read More</button>
+<h3 style="text-align: center; margin: 1.5rem 0 1rem 0; color: #2F4F4F; font-size: 1.6rem;">Tools &amp; Skills</h3>
+<div class="skills-grid">
+<div class="skill-item">
+<div class="skill-icon">🗄️</div>
+<div class="skill-name">SQL</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">📊</div>
+<div class="skill-name">Power BI</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">📈</div>
+<div class="skill-name">Excel</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">🐍</div>
+<div class="skill-name">Python</div>
+</div>
+<div class="skill-item">
+<div class="skill-icon">📉</div>
+<div class="skill-name">Statistics</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact">
+<div class="container">
+<div class="glass-card">
+<h2 class="section-title">Let's Connect</h2>
+<div class="contact-grid">
+<div class="contact-item">
+<span class="contact-icon">📧</span>
+<span>anubharti322@gmail.com</span>
+</div>
+<a class="contact-item" href="https://github.com/AnuBharti183?tab=repositories">
+<span class="contact-icon">🔗</span>
+<span>GitHub Profile</span>
+</a>
+<a class="contact-item" href="https://www.linkedin.com/in/anu-bharti-5b8655370/">
+<span class="contact-icon">💼</span>
+<span>LinkedIn Profile</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<p>© 2025 Anu Bharti. Crafted with passion for data.</p>
+</footer>
+<!-- Back to Top Button -->
+<button id="backToTopBtn" onclick="topFunction()" title="Go to top">↑</button>
+<!-- Modals with 900-word content -->
+<div class="modal" id="modal1">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal1')">×</span>
+<h2 class="modal-title">Road Accidents Analysis</h2>
+<div class="tools-container">
+<span class="tool-badge">Python</span>
+<span class="tool-badge">Pandas</span>
+<span class="tool-badge">Matplotlib</span>
+<span class="tool-badge">Seaborn</span>
+</div>
+<div class="modal-text">
+<p>The objective of this project was to analyze road accident data to uncover critical patterns, causes, and trends associated with road safety. This analysis helps identify critical insights into accident frequency, causes, locations, and time patterns to support informed decision-making for reducing road accidents and improving public safety.</p>
+<strong>Business Context</strong>
+<p>Authorities and policymakers often rely on raw reports without deep data-driven insights into accident trends. This analysis helps target interventions, improve road designs, and enhance traffic safety measures through solid data evidence</p>
+<strong>Technical Implementation</strong>
+<p>The data was download from Kaggle</p>
+<ul>
+<li>Python (Pandas): Cleaned, merged datasets; handled missing data; standardized formats.</li>
+<li>Seaborn / Matplotlib: Visualized trends through heatmaps, bar charts, pie charts</li>
+<li>Jupyter Notebook: Documented the entire workflow and analysis for transparency</li>
+</ul>
+<strong>Key Insights</strong>
+<li>A total of 307,973 accidents were recorded in the dataset.</li>
+<li>Out of these, 263,280 accidents (85.5%) were classified as slight, 40,740 (13.2%) as serious, and 3,904 (1.3%) were fatal.</li>
+<li>Friday had the highest number of accidents (50,529), while Sunday had the fewest (33,544), indicating a higher risk towards the end of the workweek.</li>
+<li>The majority of accidents, 227,286 cases (73.8%), occurred during daylight conditions.
+<li>Most accidents occurred in fine weather with no high winds (244,496 cases, 79.4%), suggesting that poor weather is not the primary factor for most incidents.</li>
+<li>Rain without high winds accounted for 37,841 accidents, making it the second most common weather condition during accidents.</li>
+<strong>Skills Demonstrated</strong>
+<li>Proficiency in cleaning and transforming raw datasets with Python (Pandas, NumPy)</li>
+<li>Competence in conducting exploratory data analysis and identifying critical insights.</li>
+<li>Emphasized strong storytelling through data visualization for non-technical stakeholders.</li>
+<img src="Road accidents 1.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+<img src="Road accidents 2.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+<img src="road accident 3.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+<img src="road accident 4.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+<img src="road accident 5.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+<img src="road accident 6.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+</li></div>
+</div>
+</div>
+<div class="modal" id="modal2">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal2')">×</span>
+<h2 class="modal-title">Data Merging</h2>
+<div class="tools-container">
+<span class="tool-badge">Python</span>
+<span class="tool-badge">Pandas</span>
+<span class="tool-badge">SQL</span>
+</div>
+<div class="modal-text">
+<p>To demonstrate data cleaning, transformation, and merging skills by preparing multiple raw datasets for analysis. This project focused on creating a clean, analysis-ready dataset from fragmented and inconsistent data sources using Python (Pandas). The clean dataset was later structured for advanced analysis through.</p>
+<strong>Business Context</strong>
+<p>In real-world businesses, data is often stored across multiple inconsistent and fragmented sources such as sales, customers, products, and inventory systems. This leads to challenges in merging data for reliable analysis, causing reporting errors and poor decision-making</p>
+<strong>Technical Implementation</strong>
+<li>Python (Pandas): Data Cleaning, Transformation, Merging</li>
+<li>Jupyter Notebook: Documentation of Process and Workflow</li>
+<li>SQL (Post-cleaning): Analysis Preparation</li>
 
-                
-                <h3 style="text-align: center; margin: 1.5rem 0 1rem 0; color: #2F4F4F; font-size: 1.6rem;">Tools & Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <div class="skill-icon">🗄️</div>
-                        <div class="skill-name">SQL</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📊</div>
-                        <div class="skill-name">Power BI</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📈</div>
-                        <div class="skill-name">Excel</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">🐍</div>
-                        <div class="skill-name">Python</div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-icon">📉</div>
-                        <div class="skill-name">Statistics</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="glass-card">
-                <h2 class="section-title">Let's Connect</h2>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>anubharti322@gmail.com</span>
-                    </div>
-                    <a href="https://github.com/AnuBharti183?tab=repositories" class="contact-item">
-                        <span class="contact-icon">🔗</span>
-                        <span>GitHub Profile</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anu-bharti-5b8655370/" class="contact-item">
-                        <span class="contact-icon">💼</span>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Anu Bharti. Crafted with passion for data.</p>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑</button>
-
-    <!-- Modals with 900-word content -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal1')">&times;</span>
-            <h2 class="modal-title">Road Accidents Analysis</h2>
-            <div class="tools-container">
-                <span class="tool-badge">Python</span>
-                <span class="tool-badge">Pandas</span>
-                <span class="tool-badge">Matplotlib</span>
-                <span class="tool-badge">Seaborn</span>
-            </div>
-            <div class="modal-text">
-                <p>The objective of this project was to analyze road accident data to uncover critical patterns, causes, and trends associated with road safety. This analysis helps identify critical insights into accident frequency, causes, locations, and time patterns to support informed decision-making for reducing road accidents and improving public safety.</p>
-                
-                <strong>Business Context</strong>
-                <p>Authorities and policymakers often rely on raw reports without deep data-driven insights into accident trends. This analysis helps target interventions, improve road designs, and enhance traffic safety measures through solid data evidence</p>
-                
-                <strong>Technical Implementation</strong>
-                <p>The data was download from Kaggle</p>
-                <ul>
-                    <li>Python (Pandas): Cleaned, merged datasets; handled missing data; standardized formats.</li>
-                    <li>Seaborn / Matplotlib: Visualized trends through heatmaps, bar charts, pie charts</li>
-                    <li>Jupyter Notebook: Documented the entire workflow and analysis for transparency</li>
-                </ul>
-                
-                <strong>Key Insights</strong>
-                <li>A total of 307,973 accidents were recorded in the dataset.</li>
-                
-                <li>Out of these, 263,280 accidents (85.5%) were classified as slight, 40,740 (13.2%) as serious, and 3,904 (1.3%) were fatal.</li>
-
-                <li>Friday had the highest number of accidents (50,529), while Sunday had the fewest (33,544), indicating a higher risk towards the end of the workweek.</li>
-
-                <li>The majority of accidents, 227,286 cases (73.8%), occurred during daylight conditions.</p>
-
-                <li>Most accidents occurred in fine weather with no high winds (244,496 cases, 79.4%), suggesting that poor weather is not the primary factor for most incidents.</li>
-                
-                <li>Rain without high winds accounted for 37,841 accidents, making it the second most common weather condition during accidents.</li>
-                <strong>Skills Demonstrated</strong>
-                <li>Proficiency in cleaning and transforming raw datasets with Python (Pandas, NumPy)</li>
-                
-                <li>Competence in conducting exploratory data analysis and identifying critical insights.</li>
-
-                <li>Emphasized strong storytelling through data visualization for non-technical stakeholders.</li>
-            
-                
-            <img src="Road accidents 1.jpg" style="width:100%; margin-top:1rem; border-radius:10px;">
-            <img src="Road accidents 2.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"> 
-            <img src="road accident 3.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"> 
-            <img src="road accident 4.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"> 
-            <img src="road accident 5.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"> 
-            <img src="road accident 6.jpg" style="width:100%; margin-top:1rem; border-radius:10px;">  
-            </div>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
-            <h2 class="modal-title">Data Merging</h2>
-            <div class="tools-container">
-                <span class="tool-badge">Python</span>
-                <span class="tool-badge">Pandas</span>
-                <span class="tool-badge">SQL</span>
-                
-            </div>
-            <div class="modal-text">
-                <p>To demonstrate data cleaning, transformation, and merging skills by preparing multiple raw datasets for analysis. This project focused on creating a clean, analysis-ready dataset from fragmented and inconsistent data sources using Python (Pandas). The clean dataset was later structured for advanced analysis through.</p>
-                
-                <strong>Business Context</strong>
-                <p>In real-world businesses, data is often stored across multiple inconsistent and fragmented sources such as sales, customers, products, and inventory systems. This leads to challenges in merging data for reliable analysis, causing reporting errors and poor decision-making</p>
-                
-                <strong>Technical Implementation</strong>
-
-                    <li>Python (Pandas): Data Cleaning, Transformation, Merging</li>
-                    <li>Jupyter Notebook: Documentation of Process and Workflow</li>
-                    <li>SQL (Post-cleaning): Analysis Preparation</li>
-                </ul>
-                
-                <strong>Project Workflow</strong>
-                <p>Data Loading & Exploration (Python)
+<strong>Project Workflow</strong>
+<p>Data Loading &amp; Exploration (Python)
 
                         <li>Imported multiple CSV files representing different tables.</li>
-                        <li>Assessed data quality, structure, and column relevancy.</li></p>
-                
-                <p>Data Cleaning (Pandas)
+<li>Assessed data quality, structure, and column relevancy.</li></p>
+<p>Data Cleaning (Pandas)
 
                         <li>Removed duplicate entries and handled missing/null values.</li>
-                        <li>Standardized naming conventions, date formats, and categorical values.</li></p>
-                    
-                </p>Data merging (Pandas)
+<li>Standardized naming conventions, date formats, and categorical values.</li></p>
+Data merging (Pandas)
                         <li>Applied appropriate join strategies to create a single, clean, unified dataset.</li>
-                        <li>Carefully maintained relational integrity between tables customers, sales, products, etc.</li></p>
-                
-                </p>Exporting Cleaned Dataset (Pandas)
-                        <li>Saved the cleaned and merged data for further SQL analysis and visualization.</li></p>
-                
-
-                <strong>Key Insights</strong>
-                         <li>The total revenue generated was approximately $92.99 million.</li>
-                         <li>The average price per product was $103.25, and the average quantity purchased per transaction was 3 items.</li>
-                         <li>The top 5 cities by number of transactions were:
+<li>Carefully maintained relational integrity between tables customers, sales, products, etc.</li>
+Exporting Cleaned Dataset (Pandas)
+                        <li>Saved the cleaned and merged data for further SQL analysis and visualization.</li>
+<strong>Key Insights</strong>
+<li>The total revenue generated was approximately $92.99 million.</li>
+<li>The average price per product was $103.25, and the average quantity purchased per transaction was 3 items.</li>
+<li>The top 5 cities by number of transactions were:
 
 North Michael (448 transactions)
 
@@ -790,7 +758,7 @@ Lake Joseph (402)
 West Michael (376)
 
 East Matthew (363)</li>
-                         <li>The top 5 countries by number of transactions were:
+<li>The top 5 countries by number of transactions were:
 
 Congo (2,364 transactions)
 
@@ -801,7 +769,7 @@ Tunisia (1,781)
 Russian Federation (1,775)
 
 Argentina (1,770)</li>
-                         <li>In terms of revenue by product category:
+<li>In terms of revenue by product category:
 
 Home category generated $24.69 million
 
@@ -810,125 +778,91 @@ Books generated $23.76 million
 Clothing generated $22.32 million
 
 Electronics generated $22.21 million</li>
-                         
+<strong>Skills Demonstrated</strong>
+<li> Data Cleaning (Null Handling, Duplicates, Formatting).</li>
+<li>Data Transformation (Creating Derived Columns, Standardizing Data).</li>
+<li>Data Merging (Multi-Table Joins in Pandas).</li>
+<li>Preparation for Analysis (SQL &amp; Visualization Ready Data).</li>
+</div>
+</div>
+</div>
+<div class="modal" id="modal3">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal3')">×</span>
+<h2 class="modal-title">Job Market Trends</h2>
+<div class="tools-container">
+<span class="tool-badge">SQL</span>
+<span class="tool-badge">Power Bi</span>
+<span class="tool-badge">DAX</span>
+</div>
+<div class="modal-text">
+<p>The objective of this project is to analyze job market trends using SQL and visualize the findings through Power BI. The goal was to extract actionable insights regarding hiring patterns, job demand, high-demand skills, and salary benchmarks to understand evolving job market dynamics.</p>
+<strong>Business Context</strong>
+<p>Understanding job market trends is critical for businesses to attract the right talent and for job seekers to stay competitive. This project analyzes Kaggle job market data to uncover insights on hiring patterns, in-demand skills, and salary trends, helping organizations optimize recruitment strategies and individuals align their career paths with market needs</p>
+<strong>Tools Used</strong>
+<li>SQL: Data Cleaning, Transformation, and Advanced Analysis</li>
+<li>Power BI: Data Visualization and Dashboarding</li>
 
-            
-                <strong>Skills Demonstrated</strong>
-                <li> Data Cleaning (Null Handling, Duplicates, Formatting).</li>
-                
-                <li>Data Transformation (Creating Derived Columns, Standardizing Data).</li>
+<strong>Key KPIs and Visuals</strong>
+<li>High-Demand Skills</li>
+<li>Salary Distribution</li>
+<li>Remote vs On-Site Job Trends</li>
+<li>Top Hiring Cities and Industries</li>
+<li>Average salary around the world</li>
+<strong>Insights</strong>
+<li>Most jobs are posted in the US, followed by the UK and Germany.</li>
+<li>Senior roles earn up to 2.5x more than entry-level positions.</li>
+<li>MPython, SQL, TensorFlow, and AWS are the most requested skills.</li>
+<li>Over 60% of jobs are fully remote or hybrid.</li>
+<li>Peak hiring periods are January–March and August–October</li>
+<strong>Skill Demonstration</strong>
+<p>In this project, I demonstrated my ability to clean and transform complex job market datasets using SQL, extract actionable insights through advanced queries, and design an interactive, professional-quality Power BI dashboard to visualize trends in hiring, skills demand, locations, and salary benchmarks. This project showcases my expertise in data analysis, business intelligence, and translating data into strategic insights for decision-making.</p>
+<img src="JobMarket.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+</div>
+</div>
+</div>
+<div class="modal" id="modal4">
+<div class="modal-content">
+<span class="close" onclick="closeModal('modal4')">×</span>
+<h2 class="modal-title">Sales Performance Analysis</h2>
+<div class="tools-container">
+<span class="tool-badge">SQL</span>
+<span class="tool-badge">Power Bi</span>
+<span class="tool-badge">DAX</span>
+</div>
+<div class="modal-text">
+<p>Analyze sales performance to identify key drivers of revenue, customer behavior trends, and regional performance variations. Provide insights to optimize sales strategy.</p>
+<strong>Business Context</strong>
+<p>Understanding sales performance is essential for businesses to maximize revenue, manage inventory, and refine marketing strategies. This project analyzes sales data to reveal trends in customer behavior, regional performance, and product profitability, enabling businesses to make informed decisions that drive growth and operational efficiency.</p>
+<strong>Tools Used</strong>
+<li>SQL: Data Cleaning, Transformation, and Advanced Analysis</li>
+<li>Power BI: Data Visualization and Dashboarding</li>
 
-                <li>Data Merging (Multi-Table Joins in Pandas).</li>
-
-                <li>Preparation for Analysis (SQL & Visualization Ready Data).</li>
-                
-                
-            </div>
-        </div>
-    </div>
-
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
-            <h2 class="modal-title">Job Market Trends</h2>
-            <div class="tools-container">
-                <span class="tool-badge">SQL</span>
-                <span class="tool-badge">Power Bi</span>
-                <span class="tool-badge">DAX</span>
-            </div>
-            <div class="modal-text">
-                <p>The objective of this project is to analyze job market trends using SQL and visualize the findings through Power BI. The goal was to extract actionable insights regarding hiring patterns, job demand, high-demand skills, and salary benchmarks to understand evolving job market dynamics.</p>
-                
-                <strong>Business Context</strong>
-                <p>Understanding job market trends is critical for businesses to attract the right talent and for job seekers to stay competitive. This project analyzes Kaggle job market data to uncover insights on hiring patterns, in-demand skills, and salary trends, helping organizations optimize recruitment strategies and individuals align their career paths with market needs</p>
-                
-                
-                <strong>Tools Used</strong>
-            
-                    <li>SQL: Data Cleaning, Transformation, and Advanced Analysis</li>
-                    <li>Power BI: Data Visualization and Dashboarding</li>
-                </ul>
-                
-                <strong>Key KPIs and Visuals</strong>
-                     <li>High-Demand Skills</li>
-                     <li>Salary Distribution</li>
-                     <li>Remote vs On-Site Job Trends</li>
-                     <li>Top Hiring Cities and Industries</li>
-                     <li>Average salary around the world</li>
-                
-                
-                <strong>Insights</strong>
-                <li>Most jobs are posted in the US, followed by the UK and Germany.</li>
-                
-                <li>Senior roles earn up to 2.5x more than entry-level positions.</li>
-
-                <li>MPython, SQL, TensorFlow, and AWS are the most requested skills.</li>
-                
-                <li>Over 60% of jobs are fully remote or hybrid.</li>
-                
-                <li>Peak hiring periods are January–March and August–October</li>
-                
-                <strong>Skill Demonstration</strong>
-                <p>In this project, I demonstrated my ability to clean and transform complex job market datasets using SQL, extract actionable insights through advanced queries, and design an interactive, professional-quality Power BI dashboard to visualize trends in hiring, skills demand, locations, and salary benchmarks. This project showcases my expertise in data analysis, business intelligence, and translating data into strategic insights for decision-making.</p>
-                
-             <img src="JobMarket.jpg" style="width:100%; margin-top:1rem; border-radius:10px;">  
-            </div>
-        </div>
-    </div>
-
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('modal4')">&times;</span>
-            <h2 class="modal-title">Sales Performance Analysis</h2>
-            <div class="tools-container">
-                <span class="tool-badge">SQL</span>
-                <span class="tool-badge">Power Bi</span>
-                <span class="tool-badge">DAX</span>
-            </div>
-            <div class="modal-text">
-                <p>Analyze sales performance to identify key drivers of revenue, customer behavior trends, and regional performance variations. Provide insights to optimize sales strategy.</p>
-                
-                <strong>Business Context</strong>
-                <p>Understanding sales performance is essential for businesses to maximize revenue, manage inventory, and refine marketing strategies. This project analyzes sales data to reveal trends in customer behavior, regional performance, and product profitability, enabling businesses to make informed decisions that drive growth and operational efficiency.</p>
-                
-                <strong>Tools Used</strong>
-            
-                    <li>SQL: Data Cleaning, Transformation, and Advanced Analysis</li>
-                    <li>Power BI: Data Visualization and Dashboarding</li>
-                </ul>
-                
-                <strong>Key KPIs and Visuals</strong>
-                     <li>Total Sales and Revenue Trends</li>
-                     <li>Top-Selling Products</li>
-                     <li>Sales by Region and Customer Segments</li>
-                     <li>Monthly and Quarterly Performance</li>
-                     <li>Contribution Analysis by Product Categories</li>
-                
-                <strong>Insights</strong>
-                <li>Certain regions consistently outperform others in sales contribution.</li>
-                
-                <li>Seasonal spikes were observed during specific quarters, aligning with marketing campaigns.</li>
-
-                <li>Product categories with higher profit margins contribute disproportionately to revenue.</li>
-                
-                <li>Repeat customers generate a significant portion of total sales.</li>
-                
-                <li>Cross-selling and bundling strategies show positive impact on revenue growth.</li>
-                
-                <strong>Skill Demonstration</strong>
-                <p>This Project demonstrates my ability to:
+<strong>Key KPIs and Visuals</strong>
+<li>Total Sales and Revenue Trends</li>
+<li>Top-Selling Products</li>
+<li>Sales by Region and Customer Segments</li>
+<li>Monthly and Quarterly Performance</li>
+<li>Contribution Analysis by Product Categories</li>
+<strong>Insights</strong>
+<li>Certain regions consistently outperform others in sales contribution.</li>
+<li>Seasonal spikes were observed during specific quarters, aligning with marketing campaigns.</li>
+<li>Product categories with higher profit margins contribute disproportionately to revenue.</li>
+<li>Repeat customers generate a significant portion of total sales.</li>
+<li>Cross-selling and bundling strategies show positive impact on revenue growth.</li>
+<strong>Skill Demonstration</strong>
+<p>This Project demonstrates my ability to:
                     <li>California overwhelmingly dominates sales, accounting for over 63% of total revenue. Washington is a distant second, with other states trailing far behind.</li>
-                    <li>Chairs and Phones are the highest revenue drivers, indicating strong demand for office furniture and communication equipment.</li>
-                    <li>Copiers, while not the top in sales, deliver the highest profit, suggesting high margins in this segment.</li>
-                    <li>Bookcases and Machines are loss leaders, possibly due to high costs or discounting. Tables, despite high sales, have low profit, indicating margin pressure.</li>
-                    <li>A few high-ticket items (like copiers and executive chairs) contribute disproportionately to revenue.</li>
-                    <li>A small number of customers are responsible for a significant share of sales, highlighting the importance of key accounts.</li>
-            <img src="SalesPerformance.jpg" style="width:100%; margin-top:1rem; border-radius:10px;">
-            </div>
-        </div>
-    </div>
-
-    <script>
+<li>Chairs and Phones are the highest revenue drivers, indicating strong demand for office furniture and communication equipment.</li>
+<li>Copiers, while not the top in sales, deliver the highest profit, suggesting high margins in this segment.</li>
+<li>Bookcases and Machines are loss leaders, possibly due to high costs or discounting. Tables, despite high sales, have low profit, indicating margin pressure.</li>
+<li>A few high-ticket items (like copiers and executive chairs) contribute disproportionately to revenue.</li>
+<li>A small number of customers are responsible for a significant share of sales, highlighting the importance of key accounts.</li>
+<img src="SalesPerformance.jpg" style="width:100%; margin-top:1rem; border-radius:10px;"/>
+</p></div>
+</div>
+</div>
+<script>
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'block';
             document.body.style.overflow = 'hidden';
@@ -1006,7 +940,7 @@ Electronics generated $22.21 million</li>
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
-    <script>
+<script>
     function toggleAboutMe() {
         const aboutText = document.getElementById('aboutMeText');
         if (aboutText.style.maxHeight === 'none') {
@@ -1020,3 +954,4 @@ Electronics generated $22.21 million</li>
 </script>
 </body>
 </html>
+
